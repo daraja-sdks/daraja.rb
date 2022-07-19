@@ -3,6 +3,6 @@
 require_relative "daraja/version"
 
 module Daraja
-  class Error < StandardError; end
-  # Your code goes here...
+  autoload :Error, "daraja/error"
+  autoload :Mpesa, "daraja/mpesa"
 end
