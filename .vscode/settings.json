@@ -1,0 +1,4 @@
+{
+  // Rubocop was running too slow for me
+  "editor.formatOnSave": false
+}
