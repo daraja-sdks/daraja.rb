@@ -23,7 +23,19 @@ module Daraja
 
         # TODO: Use faraday to send request
         token = @app[:token]
-        puts "Sending simulation request using token #{token}"
+        conn = @app[:client]
+
+        body = conn.post(ROUTES[:c2bsimulate], {
+          ShortCode: @short_code,
+          CommandID: @payment_type || "CustomerPayBillOnline",
+          Amount: @amount,
+          Msisdn: @phone_number,
+          BillRefNumber: @account_number || "account"
+        }, {
+          Authorization: "Bearer #{token}"
+        }).body
+
+        puts body
       end
 
       def register_urls
