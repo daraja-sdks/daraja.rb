@@ -35,7 +35,8 @@ module Daraja
           Authorization: "Bearer #{token}"
         }).body
 
-        puts body
+        puts body if ENV["DEBUG"]
+        # TODO: wrap with openstruct
       end
 
       def register_urls
