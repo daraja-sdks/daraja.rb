@@ -6,18 +6,18 @@ Gem::Specification.new do |spec|
   spec.name = "daraja"
   spec.version = Daraja::VERSION
   spec.authors = ["Victor Ndaba"]
-  spec.email = ["mwangindaba@gmail.com"]
+  spec.email = ["vndabam@gmail.com"]
 
   spec.summary = "Daraja API."
   spec.description = "The daraja api."
-  spec.homepage = "https://github.com/daraja-sdks/daraja.rb"
+  spec.homepage = "https://daraja-sdks.github.io"
   spec.required_ruby_version = ">= 2.6.0"
 
   # spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/daraja-sdks/daraja.rb."
-  spec.metadata["changelog_uri"] = "https://github.com/daraja-sdks/daraja.rb."
+  spec.metadata["source_code_uri"] = "https://github.com/daraja-sdks/daraja.rb"
+  spec.metadata["changelog_uri"] = "https://github.com/daraja-sdks/daraja.rb/#changelog"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
