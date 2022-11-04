@@ -44,6 +44,10 @@ module Daraja
       yield Api::CustomerToBusiness.new(get_builder_cfg)
     end
 
+    def reversal
+      yield Api::Reversal.new(get_builder_cfg)
+    end
+
     def stk_push
       yield Api::STKPush.new(get_builder_cfg)
     end
