@@ -52,7 +52,9 @@ module Daraja
       yield Api::STKPush.new(get_builder_cfg)
     end
 
-
+    def transaction_status
+      yield Api::TransactionStatus.new(get_builder_cfg)
+    end
 
     private
       def get_auth_token
