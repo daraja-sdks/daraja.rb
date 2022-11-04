@@ -32,6 +32,10 @@ module Daraja
       yield(self) if block_given?
     end
 
+    def account_bal
+      yield Api::AccountBalance.new(get_builder_cfg)
+    end
+
     def b2c
       yield Api::BusinessToCustomer.new(get_builder_cfg)
     end
