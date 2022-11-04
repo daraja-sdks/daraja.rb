@@ -32,6 +32,10 @@ module Daraja
       yield(self) if block_given?
     end
 
+    def b2c
+      yield Api::BusinessToCustomer.new(get_builder_cfg)
+    end
+
     def c2b
       yield Api::CustomerToBusiness.new(get_builder_cfg)
     end
@@ -39,7 +43,8 @@ module Daraja
     def stk_push
       yield Api::STKPush.new(get_builder_cfg)
     end
-    
+
+
 
     private
       def get_auth_token
