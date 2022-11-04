@@ -36,6 +36,11 @@ module Daraja
       yield Api::CustomerToBusiness.new(get_builder_cfg)
     end
 
+    def stk_push
+      yield Api::STKPush.new(get_builder_cfg)
+    end
+    
+
     private
       def get_auth_token
         if (Time.now.to_i - @last_token_time) < 3599
