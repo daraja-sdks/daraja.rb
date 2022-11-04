@@ -1,3 +1,0 @@
-
-fmt:
-	rubocop -A
